@@ -82,7 +82,6 @@ let package = Package(
                 return settings
             }(),
             linkerSettings: [
-                .linkedLibrary("z"),
                 .linkedFramework("Foundation"),
                 .linkedFramework("SystemConfiguration"),
                 .linkedFramework("AppKit", .when(platforms: [.macOS])),
